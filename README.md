@@ -130,3 +130,115 @@ discount: 0.0,
 created_at: Tue, 01 Oct 2024 15:32:57.711107000 UTC +00:00,
 updated_at: Tue, 01 Oct 2024 15:32:57.711107000 UTC +00:00>
 ```
+* Create atleast 10 records using the save method
+```ruby 
+product = Products.new
+product.name = 'Choco Wacko'
+product.description = 'Chocolate Donut'
+product.quantity = 10
+product.price = 300.5
+product.available = true
+product.released_at = DateTime.now - 10
+product.expiry_date = DateTime.now + 12
+product.discount = 0
+product.save
+
+product = Products.new
+product.name = 'Choco Butternut'
+product.description = 'Nutty Donut'
+product.quantity = 10
+product.price = 300.5
+product.available = true
+product.released_at = DateTime.now - 4
+product.expiry_date = DateTime.now + 9
+product.discount = 0
+product.save
+
+product = Products.new
+product.name = 'Bavarian'
+product.description = 'Cream filled'
+product.quantity = 15
+product.price = 380.00
+product.available = true
+product.released_at = DateTime.now - 5
+product.expiry_date = DateTime.now + 15
+product.discount = 20
+product.save
+
+product = Products.new
+product.name = 'Boston Creme'
+product.description = 'Choco filled'
+product.quantity = 200
+product.price = 1089.00
+product.available = false
+product.released_at = DateTime.now - 3
+product.expiry_date = DateTime.now + 15
+product.discount = 50
+product.save
+
+product = Products.new
+product.name = 'Choco Honey Dipped'
+product.description = 'Glazed'
+product.quantity = 185
+product.price = 2080.00
+product.available = true
+product.released_at = DateTime.now - 3
+product.expiry_date = DateTime.now + 16
+product.discount = 15
+product.save
+
+product = Products.new
+product.name = 'Classic'
+product.description = 'Glazed'
+product.quantity = 100.00
+product.price = 1050.00
+product.available = true
+product.released_at = DateTime.now - 3
+product.expiry_date = DateTime.now + 16
+product.discount = 15
+product.save
+
+product = Products.new
+product.name = 'Blueberry Cheese'
+product.description = 'Special'
+product.quantity = 1
+product.price = 100.00
+product.available = true
+product.released_at = DateTime.now - 3
+product.expiry_date = DateTime.now + 21
+product.discount = 0
+product.save
+
+product = Products.new
+product.name = 'Vanilla'
+product.description = 'Glazed'
+product.quantity = 1
+product.price = 25.00
+product.available = true
+product.released_at = DateTime.now - 1
+product.expiry_date = DateTime.now + 21
+product.discount = 5
+product.save
+
+product = Products.new
+product.name = 'Assorted'
+product.description = 'Max flavors'
+product.quantity = 12
+product.price = 255.00
+product.available = true
+product.released_at = DateTime.now - 12
+product.expiry_date = DateTime.now + 21
+product.discount = 5
+product.save
+
+product = Products.new
+product.name = 'Secret Recipe'
+product.description = 'Secret'
+product.quantity = 1
+product.price = 9999.00
+product.available = false
+product.released_at = DateTime.now - 12
+product.expiry_date = DateTime.now + 21
+product.discount = 0
+product.save
+```
