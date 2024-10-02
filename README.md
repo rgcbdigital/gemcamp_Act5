@@ -246,3 +246,7 @@ product.save
 ```ruby
 Products.where(name: 'Laptop')  
 ```
+* Fetch all products where price is greater than 1000.
+```ruby
+Products.where('price > ?', 100)
+```
