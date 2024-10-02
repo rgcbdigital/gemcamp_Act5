@@ -246,11 +246,15 @@ product.save
 ```ruby
 Products.where(name: 'Laptop')  
 ```
-* Fetch all products where price is greater than 1000.
+* Fetch all products where price is greater than 100.
 ```ruby
 Products.where('price > ?', 100)
 ```
 * Retrieve products where available is true.
 ```ruby
 Products.where(available: true)
+```
+* Fetch products where quantity is less than 50.
+```ruby
+Products.where('quantity < ?', 50)
 ```
