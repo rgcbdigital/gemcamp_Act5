@@ -274,3 +274,7 @@ Find products where price is between 50 and 150.
 ```ruby
 Products.where(price: 50..150)
 ```
+* Retrieve products where available is false and quantity is greater than 0.
+```ruby
+Products.where(available: false).and(Products.where("quantity > '0'"))
+```
